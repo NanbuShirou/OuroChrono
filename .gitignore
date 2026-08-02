@@ -1,0 +1,26 @@
+.gradle/
+.idea/
+local.properties
+*.iml
+build/
+app/build/
+externalNativeBuild/
+.cxx/
+**/__pycache__/
+*.pyc
+
+# Signing material and credentials
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.p12
+*.pem
+
+# Build artifacts belong in GitHub Releases, not Git history
+*.apk
+*.aab
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
