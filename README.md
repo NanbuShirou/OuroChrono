@@ -76,7 +76,7 @@ MainActivity
 ├─ CodexTokenStore ──────────────────────────── Android Keystore
 ├─ UsageCache
 ├─ RefreshScheduler ── WorkManager / AlarmManager ── RefreshWorker
-├─ CodexNowWidget ── UsageRingRenderer / ResetCreditDisplay
+├─ OuroChronoWidget ── UsageRingRenderer / ResetCreditDisplay
 └─ UsageRecoveryNotifier
 ```
 

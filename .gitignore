@@ -18,6 +18,7 @@ signing.properties
 *.pem
 
 # Build artifacts belong in GitHub Releases, not Git history
+dist/release/
 *.apk
 *.aab
 

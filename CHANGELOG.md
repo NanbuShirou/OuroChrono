@@ -25,6 +25,7 @@
 
 - `versionCode` 更新為 2。
 - `versionName` 更新為 1.0.1。
+- Android `namespace` 與 `applicationId` 改為 `tw.nanbu.ourochrono`。
 
 ## 1.0.0 - 2026-08-01
 

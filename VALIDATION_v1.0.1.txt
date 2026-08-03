@@ -1,36 +1,26 @@
-OuroChrono v1.0.1 GitHub 發布驗證報告
+OuroChrono v1.0.1 驗證報告
 日期：2026-08-02
 
-版本：
+已完成：
 - app versionCode = 2
 - app versionName = 1.0.1
+- Android namespace/applicationId = tw.nanbu.ourochrono
 - 顯示版本字串 = OuroChrono v1.0.1
-
-專案靜態驗證：
 - XML 共 41 個，全部可解析
 - Kotlin 使用的 R.id 共 50 個，全部有對應資源
 - Kotlin 使用的 R.layout 共 3 個，全部有對應資源
 - 舊 Relay 類別與設定鍵未發現
-- 日間與夜間資源均保留
-
-v1.0.1 介面與功能：
-- 主畫面分為用量檢視、通知設定、系統設定三頁
+- 主畫面已拆分為用量檢視、通知設定、系統設定三頁
 - 用量標題為「每週用量」與「5 小時用量」
-- 可重置次數位於 5 小時用量下方，與小工具共用愛心顯示規則
-- 帳號資訊下方顯示「資料更新」倒數
-- 倒數與 5、10、15、30、60 分鐘排程共用 nextRefreshAtMillis
-- 用量頁頂部更新完成提示與立即更新按鈕上方狀態文字已移除
-- 深色與淺色模式依 Android 系統主題自動切換
+- 可重置次數位於 5 小時用量下方的獨立資訊卡
+- 用量頁頂部的更新完成狀態已在登入後隱藏
+- 立即更新按鈕上方的最後更新文字已移除
+- 帳號資訊下方新增「資料更新」倒數
+- 倒數讀取 AppPreferences.nextRefreshAtMillis，與 5、10、15、30、60 分鐘排程設定共用同一時間來源
+- 切換更新週期後會立即重新顯示新的倒數
+- Activity 暫停或銷毀時會停止倒數更新，恢復時重新啟動
+- 日間與夜間資源均保留，會依 Android 系統主題自動切換
 
-GitHub 發布檢查：
-- 未包含 .idea、.gradle、build、local.properties
-- 未包含 APK、AAB、JKS、Keystore、PEM 或 P12
-- 未發現實際 Token、密碼、私鑰或絕對本機路徑
-- README、LICENSE、NOTICE、PRIVACY、SECURITY、CONTRIBUTING、CHANGELOG 均存在
-- v1.0.1 Release Notes 與發布指南均存在
-- gradlew 已設為可執行
-- docs/BUILD_AND_RELEASE.md 的 versionCode 已修正為 2
-
-未執行：
-- 此環境未安裝 Android SDK，因此未執行 assembleDebug 或 assembleRelease。
-- 正式發布前仍需在 Android Studio / JDK 17 / Android SDK 34 環境建置並測試 Signed Release APK。
+未完成：
+- 此執行環境未安裝 Android SDK，且 Gradle 8.5 發行套件無法離線下載，因此未重新產生 APK。
+- 請在已安裝 Android Studio/JDK 17 的環境執行：gradlew.bat assembleDebug
