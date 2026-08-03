@@ -6,8 +6,6 @@
 2. 在 Android 開啟允許安裝未知來源 App 的權限。
 3. 安裝 APK 並開啟 OuroChrono。
 
-從 Debug 版切換到 Release 版時，若簽章不同，Android 無法直接覆蓋安裝。請先解除安裝 Debug 版，再安裝 Release 版。解除安裝會清除登入狀態與設定。
-
 ## 2. Device Code 登入
 
 1. 按「使用 ChatGPT 帳號登入」。
